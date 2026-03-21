@@ -1,1153 +1,1024 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Nikhil Shakya - Portfolio</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900"
-      rel="stylesheet"
-    />
+<head>
+  <title>Mukesh Bhatt - Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
-    <link rel="stylesheet" href="css/animate.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
 
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css" />
+  <link rel="stylesheet" href="css/animate.css" />
 
-    <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
 
-    <link rel="stylesheet" href="css/ionicons.min.css" />
+  <link rel="stylesheet" href="css/aos.css" />
 
-    <link rel="stylesheet" href="css/flaticon.css" />
-    <link rel="stylesheet" href="css/icomoon.css" />
-    <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/ionicons.min.css" />
 
-    <meta name="description" content="Nikhil Shakya's portfolio showcasing skills in cybersecurity, web development, and more.">
-    <meta name="keywords" content="Nikhil Shakya, cybersecurity, web development, portfolio">
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <nav
-      class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target"
-      id="ftco-navbar"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="index.html">Nikhil</a>
-        <button
-          class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle"
-          type="button"
-          data-toggle="collapse"
-          data-target="#ftco-nav"
-          aria-controls="ftco-nav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="oi oi-menu"></span> Menu
-        </button>
+  <link rel="stylesheet" href="css/flaticon.css" />
+  <link rel="stylesheet" href="css/icomoon.css" />
+  <link rel="stylesheet" href="css/style.css" />
 
-        <div class="collapse navbar-collapse" id="ftco-nav">
-          <ul class="navbar-nav nav ml-auto">
-            <li class="nav-item">
-              <a href="#home-section" class="nav-link"><span>Home</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#about-section" class="nav-link"><span>About</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#resume-section" class="nav-link"><span>Resume</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#services-section" class="nav-link"
-                ><span>Services</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#skills-section" class="nav-link"><span>Skills</span></a>
-            </li>
-            <li class="nav-item">
-              <a href="#projects-section" class="nav-link"
-                ><span>Projects</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#contact-section" class="nav-link"
-                ><span>Contact</span></a
-              >
-            </li>
-          </ul>
-        </div>
+  <meta name="description"
+    content="Nikhil Shakya's portfolio showcasing skills in cybersecurity, web development, and more.">
+  <meta name="keywords" content="Nikhil Shakya, cybersecurity, web development, portfolio">
+  <style>
+    @media (min-width: 992px) {
+      .slider-text h1 {
+        font-size: 80px !important;
+      }
+
+      .slider-text h2 {
+        font-size: 32px !important;
+      }
+
+      .owl-carousel.home-slider .slider-item .slider-text .one-forth .text {
+        max-width: 65% !important;
+      }
+    }
+
+    #terminal-window {
+      background-color: #0c0c0c;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      font-family: 'Courier New', Courier, monospace;
+      color: #00ff00;
+      max-width: 1100px;
+      margin: 50px auto;
+      border: 1px solid #333;
+    }
+
+    #terminal-header {
+      background-color: #1a1a1a;
+      padding: 12px 17px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #333;
+    }
+
+    .mac-btns {
+      display: flex;
+      gap: 8px;
+    }
+
+    .mac-btn {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
+    .min-btn {
+      background-color: #ffbd2e;
+    }
+
+    .max-btn {
+      background-color: #27c93f;
+    }
+
+    .term-title {
+      color: #888;
+      font-size: 13px;
+      font-family: -apple-system, sans-serif;
+    }
+
+    #terminal-container {
+      padding: 25px 30px;
+      height: 550px;
+      overflow-y: auto;
+      text-align: left;
+      font-size: 16px;
+    }
+
+    .term-input-line {
+      display: flex;
+      margin-top: 10px;
+    }
+
+    .term-input {
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-family: 'Courier New', Courier, monospace;
+      flex-grow: 1;
+      outline: none;
+      margin-left: 10px;
+      font-size: 15px;
+    }
+
+    .term-pre {
+      color: #00ff00;
+      line-height: 1.2;
+      font-weight: bold;
+    }
+
+    .purpleFogStyle {
+      min-height: 90vh;
+      width: 100%;
+      background: linear-gradient(to bottom, #000 0%, #000 60%, #8000ff 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding-top: 80px;
+      overflow: hidden;
+      z-index: 1;
+      position: relative;
+    }
+
+    .imgStyle {
+      height: 110px;
+      width: auto;
+      margin: 0 30px;
+      object-fit: contain;
+      filter: drop-shadow(0 0 24px rgba(128, 0, 255, 0.53)) drop-shadow(0 0 8px rgba(255, 255, 255, 0.13)) drop-shadow(0 12px 18px rgba(255, 224, 102, 0.53));
+      display: inline-block;
+      vertical-align: middle;
+      flex-shrink: 0;
+    }
+
+    .logoContainerStyle {
+      display: flex;
+      align-items: center;
+      animation: slideLeft 25s linear infinite;
+      white-space: nowrap;
+      width: max-content;
+    }
+
+    @keyframes slideLeft {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .project-container {
+      max-width: 1000px;
+      /* Limits size to keep images sharp */
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    .project-row {
+      display: flex;
+      gap: 30px;
+      margin-bottom: 30px;
+      align-items: stretch;
+      /* Ensures columns stay the same height */
+    }
+
+    /* Proportional Flex Column Widths based on Image Aspect Ratios */
+    .project-col-thm {
+      flex: 1.4645;
+    }
+
+    .project-col-link {
+      flex: 0.7306;
+    }
+
+    .project-col-gg {
+      flex: 0.9378;
+    }
+
+    .project-col-htb {
+      flex: 1.0658;
+    }
+
+    .project {
+      width: 100%;
+      height: 100%;
+      /* Fills the flex column height exactly */
+      overflow: hidden;
+      position: relative;
+      border-radius: 12px;
+      background: transparent;
+      transition: all 0.4s ease;
+    }
+
+    .project-neon {
+      box-shadow: 0 0 15px rgba(140, 0, 255, 0.4);
+      border: 1px solid rgba(140, 0, 255, 0.1);
+    }
+
+    .project img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      transition: transform 0.6s ease;
+      object-fit: contain;
+      /* Aspect ratio matches container, so no gaps! */
+    }
+
+    .project-gif img {
+      image-rendering: pixelated;
+    }
+
+    .project:hover img {
+      transform: scale(1.08);
+      /* Smooth zoom effect */
+    }
+
+    .project-neon:hover {
+      box-shadow: 0 0 30px rgba(140, 0, 255, 0.7), 0 0 15px rgba(0, 255, 255, 0.3);
+      border-color: rgba(140, 0, 255, 0.6);
+      transform: translateY(-5px);
+    }
+
+    /* Fixed text overlay for legibility */
+    .project .text {
+      position: absolute !important;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: flex !important;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.5);
+      /* Semi-transparent backdrop */
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      padding: 20px !important;
+      margin: 0 !important;
+      text-align: center;
+    }
+
+    .project:hover .text {
+      opacity: 1 !important;
+    }
+
+    @media (max-width: 767.98px) {
+      .project-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .project {
+        height: auto !important;
+      }
+
+      .project img {
+        height: auto !important;
+      }
+
+      .project .text {
+        opacity: 1 !important;
+        /* Always visible on mobile */
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.1) 100%);
+        justify-content: flex-end;
+      }
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">￣へ￣</a>
+      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+        data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav nav ml-auto">
+          <li class="nav-item">
+            <a href="#home-section" class="nav-link"><span>Home</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#about-section" class="nav-link"><span>About</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#services-section" class="nav-link"><span>Interests</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#acknowledgements-section" class="nav-link"><span>Acknowledgements</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects-section" class="nav-link"><span>Socials & Platforms</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact-section" class="nav-link"><span>Contact</span></a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <section id="home-section" class="hero">
-      <div class="home-slider owl-carousel">
-        <div class="slider-item">
-          <div class="overlay"></div>
-          <div class="container">
-            <div
-              class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-              data-scrollax-parent="true"
-            >
-              <div
-                class="one-third js-fullheight order-md-last img"
-                style="background-image: url('images/Cartooned no BG.png')"
-              >
-                <div class="overlay"></div>
-              </div>
-              <div
-                class="one-forth d-flex align-items-center ftco-animate"
-                data-scrollax="properties: { translateY: '70%' }"
-              >
-                <div class="text">
-                  <span class="subheading">Hello!</span>
-                  <h1 class="mb-4 mt-3">I'm <span>Nikhil Shakya</span></h1>
-                  <h2 class="mb-4">Aspiring Information Security Analyst</h2>
-                  <p>
-                    <a href="#contact-section" class="btn btn-primary py-3 px-4"
-                      >Hire me</a
-                    >
-                    <a
-                      href="#projects-section"
-                      class="btn btn-white btn-outline-white py-3 px-4"
-                      >My works</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="slider-item">
-          <div class="overlay"></div>
-          <div class="container">
-            <div
-              class="row d-flex no-gutters slider-text align-items-end justify-content-end"
-              data-scrollax-parent="true"
-            >
-              <div
-                class="one-third js-fullheight order-md-last img"
-                style="background-image: url('images/Cartooned no BG.png')"
-              >
-                <div class="overlay"></div>
-              </div>
-              <div
-                class="one-forth d-flex align-items-center ftco-animate"
-                data-scrollax="properties: { translateY: '70%' }"
-              >
-                <div class="text">
-                  <span class="subheading">Hello!</span>
-                  <h1 class="mb-4 mt-3">
-                    I'm an
-                    <span>Aspiring Information Security Analyst</span> based in
-                    Chandigarh
-                  </h1>
-                  <p>
-                    <a href="#" class="btn btn-primary py-3 px-4">Hire me</a>
-                    <a
-                      href="#"
-                      class="btn btn-white btn-outline-white py-3 px-4"
-                      >My works</a
-                    >
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-      <div class="container">
-        <div class="row d-flex">
-          <div class="col-md-6 col-lg-5 d-flex">
-            <div class="img-about img d-flex align-items-stretch">
+  <section id="home-section" class="hero">
+    <div class="home-slider owl-carousel">
+      <div class="slider-item">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row d-md-flex no-gutters slider-text align-items-center justify-content-end"
+            data-scrollax-parent="true">
+            <div class="one-third order-md-last img"
+              style="background-image: url('images/gg1.gif'); background-size: contain; background-position: right center; background-repeat: no-repeat; height: 530px;">
               <div class="overlay"></div>
             </div>
-          </div>
-          <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-            <div class="row justify-content-start pb-3">
-              <div class="col-md-12 heading-section ftco-animate">
-                <h1 class="big">About</h1>
-                <h2 class="mb-4">About Me</h2>
+            <div class="one-forth d-flex align-items-center ftco-animate"
+              data-scrollax="properties: { translateY: '70%' }">
+              <div class="text">
+                <h2><strong>Hello!🤝</strong></h2>
+                <h1 class="mb-3 mt-3">I'm <span>Mukesh Bhatt</span></h1>
+                <h2 class="mb-5">Aspiring Cybersecurity Professional</h2>
                 <p>
-                  <strong
-                    >My passion for cybersecurity stems from a desire to protect
-                    individuals and organizations from the ever-evolving
-                    threats. With a strong foundation in both technical and
-                    leadership skills, I am dedicated to advancing my knowledge
-                    and expertise in the field of cybersecurity.</strong
-                  >
+                  <a href="images/Mukesh_Bhatt_resume.pdf" class="btn btn-primary py-3 px-4"
+                    download="Mukesh_Bhatt_resume.pdf">Resume🗒️</a>
+                  <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a>
                 </p>
-
-                <ul class="about-info mt-4 px-md-0 px-2">
-                  <li class="d-flex">
-                    <span>Name:</span> <span>Nikhil Shakya</span>
-                  </li>
-                  <li class="d-flex">
-                    <span>Date of birth:</span> <span>August 09, 2005</span>
-                  </li>
-                  <li class="d-flex">
-                    <span>Address:</span>
-                    <span>Chandigarh, India</span>
-                  </li>
-                  <li class="d-flex">
-                    <span>Pin code:</span> <span>160003</span>
-                  </li>
-                  <li class="d-flex">
-                    <span>Email:</span> <span>nikhilshakya0905@gmail.com</span>
-                  </li>
-                  <li class="d-flex">
-                    <span>Phone:</span> <span>+91-9872408318</span>
-                  </li>
-                </ul>
               </div>
             </div>
-            <div class="counter-wrap ftco-animate d-flex mt-md-3">
+          </div>
+        </div>
+      </div>
+
+      <div class="slider-item">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row d-flex no-gutters slider-text align-items-center justify-content-end"
+            data-scrollax-parent="true">
+            <div class="one-third order-md-last img"
+              style="background-image: url('images/gg1.gif'); background-size: contain; background-position: right center; background-repeat: no-repeat; height: 530px;">
+              <div class="overlay"></div>
+            </div>
+            <div class="one-forth d-flex align-items-right ftco-animate"
+              data-scrollax="properties: { translateY: '70%' }">
               <div class="text">
-                <p class="mb-4">
-                  <span class="number" data-number="5">0</span>
-                  <span>Projects completed</span>
-                </p>
+                <span class="subheading">Hello!</span>
+                <h1 class="mb-4 mt-3">
+                  I'm a
+                  <span>Security Researcher & CTF Player</span>
+                </h1>
                 <p>
-                  <a
-                    href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:53aeb675-1f88-4b8c-a144-0db015c8a608"
-                    target="_blank"
-                    class="btn btn-primary py-3 px-3"
-                    >Download CV</a
-                  >
+                  <a href="images/Mukesh_Bhatt_resume.pdf" class="btn btn-primary py-3 px-4"
+                    download="Mukesh_Bhatt_resume.pdf">Resume🗒️</a>
+                  <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My works</a>
                 </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-      <div class="container">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-10 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Resume</h1>
-            <h2 class="mb-4">Resume</h2>
-            <p>
-              <strong
-                >Self-motivated and hardworking learner seeking an opportunity
-                to work in a challenging environment to prove my skills and
-                utilize my knowledge intelligence in the growth of the
-                organization.</strong
-              >
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="resume-wrap ftco-animate">
-              <span class="date">2023-2027</span>
-              <h2>Bachelor's Degree of CSE</h2>
-              <span class="position">Lovely Professional University</span>
-              <p class="mt-4">
-                I have been pursuing a Bachelor's Degree in Computer Science and
-                Engineering with a specialization in Cybersecurity and
-                Blockchain. I have gained proficiency in both frontend and
-                backend web development, penetration testing, network security,
-                ethical hacking, data management, and protection. Additionally,
-                I have participated in various technical workshops and
-                hackathons to further enhance my skills and knowledge in these
-                areas.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="resume-wrap ftco-animate">
-              <span class="date">2022-2023</span>
-              <h2>Senior Secondary Education</h2>
-              <span class="position"
-                >Kendriya Vidyalaya 3BRD AFS, Chandigarh</span
-              >
-              <p class="mt-4">
-                I completed my secondary and senior secondary education at KV
-                3BRD AFS, Chandigarh. During my time there, I participated in
-                various cultural and co-curricular activities, including event
-                management, youth parliament, public speaking, and painting
-                competitions. I was also actively involved in the National Cadet
-                Corps (NCC) and the National Service Scheme (NSS) and served as
-                Captain of the School-House Council.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-center mt-5">
-          <div class="col-md-6 text-center ftco-animate">
-            <p>
-              <a
-                href="https://acrobat.adobe.com/id/urn:aaid:sc:AP:53aeb675-1f88-4b8c-a144-0db015c8a608"
-                target="Nikhil-CV"
-                class="btn btn-primary py-3 px-3"
-                >Download CV</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section" id="services-section">
-      <div class="container">
-        <div class="row justify-content-center py-5 mt-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Services</h1>
-            <h2 class="mb-4">Services</h2>
-            <p>
-              <strong>
-                Here are some services I can provide through my skill sets:
-              </strong>
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 text-center d-flex ftco-animate">
-            <a href="#" class="services-1">
-              <span class="icon">
-                <i class="flaticon-analysis"></i>
-              </span>
-              <div class="desc">
-                <h3 class="mb-5">Penetration Testing</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 text-center d-flex ftco-animate">
-            <a href="#" class="services-1">
-              <span class="icon">
-                <i class="flaticon-flasks"></i>
-              </span>
-              <div class="desc">
-                <h3 class="mb-5">Network Security</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 text-center d-flex ftco-animate">
-            <a href="#" class="services-1">
-              <span class="icon">
-                <i class="flaticon-ideas"></i>
-              </span>
-              <div class="desc">
-                <h3 class="mb-5">Ethical Hacking</h3>
-              </div>
-            </a>
-          </div>
-
-          <div class="col-md-4 text-center d-flex ftco-animate">
-            <a href="#" class="services-1">
-              <span class="icon">
-                <i class="flaticon-analysis"></i>
-              </span>
-              <div class="desc">
-                <h3 class="mb-5">Security Operations Centre (SOC)</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 text-center d-flex ftco-animate">
-            <a href="#" class="services-1">
-              <span class="icon">
-                <i class="flaticon-flasks"></i>
-              </span>
-              <div class="desc">
-                <h3 class="mb-5">Blockchain</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 text-center d-flex ftco-animate">
-            <a href="#" class="services-1">
-              <span class="icon">
-                <i class="flaticon-ideas"></i>
-              </span>
-              <div class="desc">
-                <h3 class="mb-5">Web Developing</h3>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section" id="skills-section">
-      <div class="container">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Technical Skills</h1>
-            <h2 class="mb-4">My Skills</h2>
-            <p>
-              <strong
-                >I have expertise in various technical domains, allowing me to
-                address complex challenges and deliver effective
-                solutions.</strong
-              >
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 animate-box">
-            <div class="progress-wrap ftco-animate">
-              <h3>Cybersecurity</h3>
-              <div class="progress">
-                <div
-                  class="progress-bar color-1"
-                  role="progressbar"
-                  aria-valuenow="80"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 80%"
-                >
-                  <span>80%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 animate-box">
-            <div class="progress-wrap ftco-animate">
-              <h3>Web Development</h3>
-              <div class="progress">
-                <div
-                  class="progress-bar color-2"
-                  role="progressbar"
-                  aria-valuenow="65"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 80%"
-                >
-                  <span>65%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 animate-box">
-            <div class="progress-wrap ftco-animate">
-              <h3>Pen-Testing</h3>
-              <div class="progress">
-                <div
-                  class="progress-bar color-3"
-                  role="progressbar"
-                  aria-valuenow="45"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 80%"
-                >
-                  <span>45%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 animate-box">
-            <div class="progress-wrap ftco-animate">
-              <h3>Ethical Hacking</h3>
-              <div class="progress">
-                <div
-                  class="progress-bar color-4"
-                  role="progressbar"
-                  aria-valuenow="40"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 80%"
-                >
-                  <span>40%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 animate-box">
-            <div class="progress-wrap ftco-animate">
-              <h3>Network Security</h3>
-              <div class="progress">
-                <div
-                  class="progress-bar color-5"
-                  role="progressbar"
-                  aria-valuenow="50"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 80%"
-                >
-                  <span>50%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 animate-box">
-            <div class="progress-wrap ftco-animate">
-              <h3>Security Op Centre (SOC)</h3>
-              <div class="progress">
-                <div
-                  class="progress-bar color-6"
-                  role="progressbar"
-                  aria-valuenow="60"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 80%"
-                >
-                  <span>50%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 animate-box">
-            <div class="progress-wrap ftco-animate">
-              <h3>Blockchain</h3>
-              <div class="progress">
-                <div
-                  class="progress-bar color-7"
-                  role="progressbar"
-                  aria-valuenow="50"
-                  aria-valuemin="0"
-                  aria-valuemax="100"
-                  style="width: 80%"
-                >
-                  <span>50%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section ftco-project" id="projects-section">
-      <div class="container">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Projects</h1>
-            <h2 class="mb-4">My Projects</h2>
-            <p>
-              <strong
-                >Explore a selection of projects that demonstrate my expertise
-                across various domains including frontend and backend web
-                development, cybersecurity, and blockchain technology. Each
-                project showcases practical applications of my skills and
-                innovative solutions to real-world challenges.</strong
-              >
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-8">
-            <a
-              href="https://github.com/Nikhil0905/Secure-File-Management-System"
-              target="Secure File Management System"
-            >
-              <div
-                class="project img ftco-animate d-flex justify-content-center align-items-center"
-                style="background-image: url(images/logo.png)"
-              >
-                <div class="overlay"></div>
-                <div class="text text-center p-4">
-                  <h3>Secure File Management System</h3>
-                  <span>Cryptography &amp; Cybersecurity</span>
-                  <p>Completed: 2023 | Tech Stack: Python, Flask, SQLAlchemy</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a
-              href="https://www.youtube.com/watch?v=uya7qfsFG7w"
-              target="Radar"
-            >
-              <div
-                class="project img ftco-animate d-flex justify-content-center align-items-center"
-                style="background-image: url(images/radar.png)"
-              >
-                <div class="overlay"></div>
-                <div class="text text-center p-4">
-                  <h3>Radar Monitoring System</h3>
-                  <span>Internet of Things (IoT)</span>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <a
-              href="https://nikhil0905.github.io/Go-Renewable-Website/index.html"
-              target="gorenewable"
-            >
-              <div
-                class="project img ftco-animate d-flex justify-content-center align-items-center"
-                style="background-image: url(images/renewable.png)"
-              >
-                <div class="overlay"></div>
-                <div class="text text-center p-4">
-                  <h3>Go Renewable Energy Website</h3>
-                  <span>Web Design</span>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-8">
-            <a
-              href="https://github.com/Nikhil0905/Hotel-Management"
-              target="Hotel Management"
-            >
-              <div
-                class="project img ftco-animate d-flex justify-content-center align-items-center"
-                style="background-image: url(images/hotel.png)"
-              >
-                <div class="overlay"></div>
-                <div class="text text-center p-4">
-                  <h3>Hotel Management System</h3>
-                  <span>Python-based CLI</span>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img"
-      id="section-counter"
-    >
-      <div class="container">
-        <div class="row d-md-flex align-items-center">
-          <div
-            class="col-md d-flex justify-content-center counter-wrap ftco-animate"
-          >
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="21">0</strong>
-                <span>Languages and Tools</span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md d-flex justify-content-center counter-wrap ftco-animate"
-          >
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="5">0</strong>
-                <span>Completed Projects</span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md d-flex justify-content-center counter-wrap ftco-animate"
-          >
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="3">0</strong>
-                <span>Happy Customers</span>
-              </div>
-            </div>
-          </div>
-          <div
-            class="col-md d-flex justify-content-center counter-wrap ftco-animate"
-          >
-            <div class="block-18">
-              <div class="text">
-                <strong class="number" data-number="3">0</strong>
-                <span>Years Experience</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="ftco-section" id="tools-section">
-      <div class="container">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-12 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Languages &amp; Tools</h1>
-            <h2 class="mb-4">Languages and Tools</h2>
-            <p>
-              <strong
-                >Below is a list of programming languages and tools that I am
-                proficient in:</strong
-              >
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 d-flex justify-content-center ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong><span>Kali Linux</span></strong>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex justify-content-center ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong><span>Python</span></strong>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex justify-content-center ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong><span>Red Hat Enterprise Linux(RHEL)</span></strong>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex justify-content-center ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong><span>Bash</span></strong>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 d-flex justify-content-center ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong><span>C/C++</span></strong>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex justify-content-center ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong><span>SQL</span></strong>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex justify-content-center ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong><span>Git / GitHub</span></strong>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex justify-content-center ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong><span>DSA</span></strong>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 d-flex justify-content-center ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong><span>Ubuntu</span></strong>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex justify-content-center ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong><span>Metasploit</span></strong>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex justify-content-center ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong><span>Burp Suite</span></strong>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex justify-content-center ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong><span>Wireshark</span></strong>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 d-flex justify-content-center ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong><span>Nmap</span></strong>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex justify-content-center ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong><span>HTML</span></strong>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex justify-content-center ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong><span>JavaScript</span></strong>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 d-flex justify-content-center ftco-animate">
-            <div class="block-18">
-              <div class="text">
-                <strong><span>MS Office</span></strong>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="ftco-section ftco-hireme img margin-top"
-      style="background-image: url(images/bg_1.jpg)"
-    >
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-7 ftco-animate text-center">
-            <h2>I'm <span>Available</span> for freelancing</h2>
-            <p>
-              <strong
-                >I am available for freelance projects and full-time
-                opportunities. I bring innovative solutions and a strong
-                commitment to quality. Let's collaborate to bring your ideas to
-                life.</strong
-              >
-            </p>
-            <p class="mb-0">
-              <a href="#contact-section" class="btn btn-primary py-3 px-5"
-                >Hire me</a
-              >
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      class="ftco-section contact-section ftco-no-pb"
-      id="contact-section"
-    >
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>
-              <strong
-                >Feel free to contact me regarding opportunities or for
-                inquiries.</strong
-              >
-            </p>
-          </div>
-        </div>
-
-        <div class="row d-flex contact-info mb-5">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-map-signs"></span>
-              </div>
-              <h3 class="mb-4">Address</h3>
-              <p>Chandigarh, India</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-phone2"></span>
-              </div>
-              <h3 class="mb-4">Contact Number</h3>
-              <p><a href="tel://1234567920"> +91-9872408318</a></p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-paper-plane"></span>
-              </div>
-              <h3 class="mb-4">Email Address</h3>
-              <p>nikhilshakya0905@gmail.com</p>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box p-4 text-center">
-              <div
-                class="icon d-flex align-items-center justify-content-center"
-              >
-                <span class="icon-globe"></span>
-              </div>
-              <h3 class="mb-4">Website</h3>
-              <p><a href="#">Not Available</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="row no-gutters block-9">
-          <div class="col-md-6 order-md-last d-flex">
-            <form
-              action="https://formspree.io/f/mkgwokrd"
-              method="POST"
-              class="bg-light p-4 p-md-5 contact-form"
-            >
-              <div class="form-group">
-                <input
-                  type="text"
-                  name="name"
-                  class="form-control"
-                  placeholder="Your Name"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  name="email"
-                  class="form-control"
-                  placeholder="Your Email"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="tel"
-                  name="phone"
-                  class="form-control"
-                  placeholder="Your Phone"
-                  pattern="[+]{1}[0-9]{1,3}[0-9]{10}"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="text"
-                  name="subject"
-                  class="form-control"
-                  placeholder="Subject"
-                  required
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  name="message"
-                  id=""
-                  cols="30"
-                  rows="7"
-                  class="form-control"
-                  placeholder="Message"
-                  required
-                ></textarea>
-              </div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary py-3 px-5">
-                  Send Message
-                </button>
-              </div>
-            </form>
-          </div>
-
-          <div class="col-md-6 d-flex">
-            <div
-              class="img"
-              style="background-image: url(images/Cartooned\ no\ BG.png)"
-            ></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <footer class="ftco-footer ftco-section">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">About</h2>
-              <p>
-                My passion for cybersecurity stems from a desire to protect
-                individuals and organizations from the ever. With a strong
-                foundation in both technical and leadership skills.
-              </p>
-
-              <ul
-                class="ftco-footer-social list-unstyled float-md-left float-lft mt-4"
-              >
-                <li class="ftco-animate">
-                  <a
-                    href="https://github.com/Nikhil0905/"
-                    target="github"
-                    ><span class="icon-github"></span
-                  ></a>
-                </li>
-                <li class="ftco-animate">
-                  <a
-                    href="https://www.linkedin.com/in/nikhilshakya0905/"
-                    target="linkedin"
-                    ><span class="icon-linkedin"></span
-                  ></a>
-                </li>
-                <li class="ftco-animate">
-                  <a href="https://x.com/NikhilShakya09" target="X"
-                    ><span class="icon-twitter"></span
-                  ></a>
-                </li>
-                <li class="ftco-animate">
-                  <a
-                    href="https://www.instagram.com/aham_nikhilshakya/"
-                    target="insta"
-                    ><span class="icon-instagram"></span
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Links</h2>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#"
-                    ><span class="icon-long-arrow-right mr-2"></span>Home</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><span class="icon-long-arrow-right mr-2"></span>About</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><span class="icon-long-arrow-right mr-2"></span>Services</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><span class="icon-long-arrow-right mr-2"></span>Projects</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><span class="icon-long-arrow-right mr-2"></span>Contact</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Services</h2>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#"
-                    ><span class="icon-long-arrow-right mr-2"></span>Penetration
-                    Testing</a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><span class="icon-long-arrow-right mr-2"></span>Network
-                    Security</a
-                  >
-                </li>
-                
-                <li>
-                  <a href="#"
-                    ><span class="icon-long-arrow-right mr-2"></span>Security operations Centre(SOC)
-                    </a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><span class="icon-long-arrow-right mr-2"></span>Web
-                    Development</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Have Questions?</h2>
-              <div class="block-23 mb-3">
-                <ul>
-                  <li>
-                    <span class="icon icon-map-marker"></span
-                    ><span class="text">  Chandigarh, India</span>
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><span class="icon icon-phone"></span
-                      ><span class="text">+91 9872408318</span></a
-                    >
-                  </li>
-                  <li>
-                    <a href="#"
-                      ><span class="icon icon-envelope"></span
-                      ><span class="text">nikhilshakya0905@gmail.com</span></a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p>
-              Copyright &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              All rights reserved
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- loader -->
-    <div id="ftco-loader" class="show fullscreen">
-      <svg class="circular" width="48px" height="48px">
-        <circle
-          class="path-bg"
-          cx="24"
-          cy="24"
-          r="22"
-          fill="none"
-          stroke-width="4"
-          stroke="#eeeeee"
-        />
-        <circle
-          class="path"
-          cx="24"
-          cy="24"
-          r="22"
-          fill="none"
-          stroke-width="4"
-          stroke-miterlimit="10"
-          stroke="#F96D00"
-        />
-      </svg>
     </div>
+  </section>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/scrollax.min.js"></script>
+  <section class="ftco-section ftco-no-pb mb-0" id="about-section">
+    <div class="container pb-0">
+      <!-- TERMINAL COMPONENT -->
+      <div id="terminal-window">
+        <div id="terminal-header">
+          <div class="mac-btns">
+            <div class="mac-btn min-btn"></div>
+            <div class="mac-btn max-btn"></div>
+          </div>
+          <div class="term-title">0x9GR@root-access ~</div>
+        </div>
+        <div id="terminal-container" onclick="document.getElementById('cmd-input').focus()">
+          <pre class="term-pre">
+███     ███  ██  ██  ██   ██ █████  ███████ ██   ██ 
+████   ████  ██  ██  ██  ██  ██     ██      ██   ██
+██ ██ ██ ██  ██  ██  ████    █████  ███████ ███████
+██  ███  ██  ██  ██  ██  ██  ██          ██ ██   ██
+██       ██   ████   ██   ██ █████  ███████ ██   ██  
+</pre>
+          <div class="mt-4 mb-2">
+            Welcome to the MB SecOS v2.0<br>
+            Type <span style="color: #4da6ff;">help</span> for a list of valid commands.
+          </div>
+          <div id="terminal-output"></div>
+          <div class="term-input-line">
+            <span style="color: #00ff00;">guest@ns:~$</span>
+            <input type="text" id="cmd-input" class="term-input" autocomplete="off" autofocus
+              onkeydown="handleTerminalCommand(event)">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="js/main.js"></script>
-  </body>
+  <script>
+    function handleTerminalCommand(event) {
+      if (event.key === 'Enter') {
+        const inputLine = event.target.value.trim().toLowerCase();
+        const outputDiv = document.getElementById('terminal-output');
+        let response = '';
+
+        if (inputLine === 'clear') {
+          outputDiv.innerHTML = '';
+          event.target.value = '';
+          return;
+        } else if (inputLine === 'help') {
+          response = 'Available commands:<br>&nbsp;&nbsp;<span style="color: #4da6ff;">ls</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;List directory contents (shows about me)<br>&nbsp;&nbsp;<span style="color: #4da6ff;">clear</span>&nbsp;&nbsp;&nbsp;Clear the terminal screen<br>&nbsp;&nbsp;<span style="color: #4da6ff;">help</span>&nbsp;&nbsp;&nbsp;&nbsp;Show this message';
+        } else if (inputLine === 'ls') {
+          response = `<div style="color: #ccc; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;">
+              Recognized in 𝗜𝗻𝗳𝗼𝗿𝗺𝗮𝘁𝗶𝗰𝗮 (𝟮𝟬𝟮𝟱), 𝗥𝗲𝗱 𝗛𝗮𝘁 (𝟮𝟬𝟮𝟲), 𝗧𝗲𝗻𝗰𝗲𝗻𝘁 (𝟮𝟬𝟮𝟲) & 𝗞𝗼𝗽𝗽𝗮 𝗦𝗲𝗰𝘂𝗿𝗶𝘁𝘆 𝗛𝗮𝗹𝗹 𝗼𝗳 𝗙𝗮𝗺𝗲 for responsible disclosure. Helped 𝘀𝗲𝗰𝘂𝗿𝗲 𝟲𝟱+ 𝗼𝗿𝗴𝗮𝗻𝗶𝘇𝗮𝘁𝗶𝗼𝗻𝘀, 𝟭𝟬+ 𝗴𝗹𝗼𝗯𝗮𝗹 𝗴𝗼𝘃𝗲𝗿𝗻𝗺𝗲𝗻𝘁 & 𝗺𝗶𝗹𝗶𝘁𝗮𝗿𝘆 𝗮𝘀𝘀𝗲𝘁𝘀 𝗮𝗻𝗱 𝟰 𝘂𝗻𝗶𝘃𝗲𝗿𝘀𝗶𝘁𝗶𝗲𝘀.<br><br>
+              🐞 Over 120+ Security Vulns reported.<br>
+              💸 $1400+ 𝙞𝗻 𝗯𝘂𝗴 𝗯𝗼𝘂𝗻𝘁𝘆 𝗿𝗲𝘄𝗮𝗿𝗱𝘀.<br>
+              🏆 Top 1% on TryHackMe.<br>
+              ⚔️ Competed in 50+ global CTF events.<br><br>
+              <strong>Interests:</strong><br>
+              Web App Security • OffSec • API Pentesting • OSINT • DFIR • Linux Sysadmin • Cloud Security
+            </div>`;
+        } else if (inputLine !== '') {
+          response = `<div style="color: #ff5f56; margin-top: 5px;">bash: ${inputLine}: command not found</div>`;
+        }
+
+        let newContent = `<div class="mt-2"><span style="color: #00ff00;">guest@ns:~$</span> <span style="color: #fff;">${event.target.value}</span></div>`;
+        if (response) {
+          newContent += `<div>${response}</div>`;
+        }
+
+        outputDiv.innerHTML += newContent;
+        event.target.value = '';
+
+        const termContainer = document.getElementById('terminal-container');
+        termContainer.scrollTop = termContainer.scrollHeight;
+      }
+    }
+  </script>
+
+
+  <section class="ftco-section ftco-no-pt mt-5" id="services-section">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Interests</h1>
+          <h2 class="mb-4">Interests</h2>
+          <p>
+            <strong>
+              These are the fields I'm having interest and best represents my current skill sets:
+            </strong>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 text-center d-flex ftco-animate">
+          <a href="#" class="services-1">
+            <span class="icon">
+              <i class="flaticon-analysis"></i>
+            </span>
+            <div class="desc">
+              <h3 class="mb-5">Web App PenTesting</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 text-center d-flex ftco-animate">
+          <a href="#" class="services-1">
+            <span class="icon">
+              <i class="flaticon-flasks"></i>
+            </span>
+            <div class="desc">
+              <h3 class="mb-5">Linux System Administration</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 text-center d-flex ftco-animate">
+          <a href="#" class="services-1">
+            <span class="icon">
+              <i class="flaticon-ideas"></i>
+            </span>
+            <div class="desc">
+              <h3 class="mb-5">Ethical Hacking</h3>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4 text-center d-flex ftco-animate">
+          <a href="#" class="services-1">
+            <span class="icon">
+              <i class="flaticon-analysis"></i>
+            </span>
+            <div class="desc">
+              <h3 class="mb-5">OSINT & DFIR</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 text-center d-flex ftco-animate">
+          <a href="#" class="services-1">
+            <span class="icon">
+              <i class="flaticon-flasks"></i>
+            </span>
+            <div class="desc">
+              <h3 class="mb-5">Cloud Security</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 text-center d-flex ftco-animate">
+          <a href="#" class="services-1">
+            <span class="icon">
+              <i class="flaticon-ideas"></i>
+            </span>
+            <div class="desc">
+              <h3 class="mb-5">API PenTesting</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section purpleFogStyle" id="acknowledgements-section">
+    <div class="container pb-2 mb-4">
+      <div class="row justify-content-center pb-2">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Hall Of Fames</h1>
+          <h2 class="mb-4">ACKNOWLEDGEMENTS</h2>
+          <p>
+            <strong>Received bounties, Hall of Fames and Thanks from following organizations:</strong>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="logoContainerStyle mt-5 pt-5 mb-5 pb-5">
+      <!-- First set of logos -->
+      <img src="images/c.png" alt="I" class="imgStyle" />
+      <img src="images/s.png" alt="S" class="imgStyle" />
+      <img src="images/peer.png" alt="Peer" class="imgStyle" />
+      <img src="images/jump.png" alt="Jump" class="imgStyle" />
+      <img src="images/c.svg" alt="I" class="imgStyle" />
+      <img src="images/li.png" alt="Li" class="imgStyle" />
+      <img src="images/l.jpg" alt="Li" class="imgStyle" />
+      <img src="images/r.jpg" alt="Li" class="imgStyle" />
+      <img src="images/t.png" alt="Li" class="imgStyle" />
+      <img src="images/h.png" alt="Li" class="imgStyle" />
+      <img src="images/u.jpg" alt="Li" class="imgStyle" />
+      <img src="images/n.png" alt="I" class="imgStyle" />
+      <img src="images/i.png" alt="I" class="imgStyle" />
+      <img src="images/kk.png" alt="KK" class="imgStyle" />
+      <img src="images/neon-dark.jpg" alt="Neon" class="imgStyle" />
+      <img src="images/th.webp" alt="I" class="imgStyle" />
+      <img src="images/fr.jpg" alt="I" class="imgStyle" />
+      <img src="images/iq.jpg" alt="I" class="imgStyle" />
+      <img src="images/punch.png" alt="Punch" class="imgStyle" />
+      <img src="images/or.png" alt="Or" class="imgStyle" />
+      <img src="images/ic.jpg" alt="Li" class="imgStyle" />
+      <img src="images/d.png" alt="Li" class="imgStyle" />
+      <img src="images/sa.png" alt="I" class="imgStyle" />
+      <!-- Second set of logos for seamless looping -->
+      <img src="images/c.png" alt="I" class="imgStyle" />
+      <img src="images/s.png" alt="S" class="imgStyle" />
+      <img src="images/peer.png" alt="Peer" class="imgStyle" />
+      <img src="images/jump.png" alt="Jump" class="imgStyle" />
+      <img src="images/c.svg" alt="I" class="imgStyle" />
+      <img src="images/li.png" alt="Li" class="imgStyle" />
+      <img src="images/l.jpg" alt="Li" class="imgStyle" />
+      <img src="images/r.jpg" alt="Li" class="imgStyle" />
+      <img src="images/t.png" alt="Li" class="imgStyle" />
+      <img src="images/h.png" alt="Li" class="imgStyle" />
+      <img src="images/u.jpg" alt="Li" class="imgStyle" />
+      <img src="images/n.png" alt="I" class="imgStyle" />
+      <img src="images/i.png" alt="I" class="imgStyle" />
+      <img src="images/kk.png" alt="KK" class="imgStyle" />
+      <img src="images/neon-dark.jpg" alt="Neon" class="imgStyle" />
+      <img src="images/th.webp" alt="I" class="imgStyle" />
+      <img src="images/fr.jpg" alt="I" class="imgStyle" />
+      <img src="images/iq.jpg" alt="I" class="imgStyle" />
+      <img src="images/punch.png" alt="Punch" class="imgStyle" />
+      <img src="images/or.png" alt="Or" class="imgStyle" />
+      <img src="images/ic.jpg" alt="Li" class="imgStyle" />
+      <img src="images/d.png" alt="Li" class="imgStyle" />
+      <img src="images/sa.png" alt="I" class="imgStyle" />
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-project" id="projects-section">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Socials & Platforms</h1>
+          <h2 class="mb-4">Socials & Platforms</h2>
+          <p>
+            <strong>Socials & practice platforms to follow my work and connect with me:</strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="project-row align-items-center">
+        <!-- GIF Project (flex: 0.9378) -->
+        <div class="project-col-gg">
+          <a href="https://github.com/MukeshBhatt09" target="Secure File Management System">
+            <div class="project project-neon project-gif ftco-animate">
+              <video autoplay loop muted playsinline class="img-fluid" style="width: 100%; height: auto;">
+                <source src="images/gg.mkv" type="video/x-matroska">
+                Your browser does not support the video tag.
+              </video>
+              <div class="overlay"></div>
+              <div class="text text-center p-4">
+                <h3>GitHub</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Balanced Project (flex: 1.0658) -->
+        <div class="project-col-htb">
+          <a href="https://app.hackthebox.com/users/2259409" target="Radar">
+            <div class="project project-neon ftco-animate">
+              <img src="images/htb.png" alt="Radar Monitoring System" class="img-fluid">
+              <div class="overlay"></div>
+              <div class="text text-center p-4">
+                <h3>Hack The Box</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+
+      <div class="project-row align-items-center">
+
+        <!-- Wide Project (flex: 1.4645) -->
+        <div class="project-col-thm">
+          <a href="https://tryhackme.com/p/0x9GR" target="gorenewable">
+            <div class="project project-neon ftco-animate">
+              <img src="images/thm.png" alt="Go Renewable Energy Website" class="img-fluid">
+              <div class="overlay"></div>
+              <div class="text text-center p-4">
+                <h3>TryHackMe</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- Narrow Project (flex: 0.7306) -->
+        <div class="project-col-link">
+          <a href="https://www.linkedin.com/in/mukesh-chandra-bhatt09/" target="Hotel Management">
+            <div class="project project-neon ftco-animate">
+              <img src="images/link.png" alt="Hotel Management System" class="img-fluid">
+              <div class="overlay"></div>
+              <div class="text text-center p-4">
+                <h3>LinkedIn</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+    <div class="container">
+      <div class="row d-md-flex align-items-center">
+        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong class="number">120+</strong>
+              <span>Vulnerabilities</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong class="number">65+</strong>
+              <span>Organizations secured</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong class="number">50+</strong>
+              <span>Global CTF</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong class="number">1.5+</strong>
+              <span>Years Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section" id="tools-section">
+    <div class="container">
+      <div class="row justify-content-center pb-5">
+        <div class="col-md-12 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Languages &amp; Tools</h1>
+          <h2 class="mb-4">Languages and Tools</h2>
+          <p>
+            <strong>Below is a list of programming languages and tools that I am
+              proficient in:</strong>
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 d-flex justify-content-center ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong><span>Kali Linux</span></strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong><span>Python</span></strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong><span>Red Hat Enterprise Linux(RHEL)</span></strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong><span>Bash</span></strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 d-flex justify-content-center ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong><span>C/C++</span></strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong><span>SQL</span></strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong><span>Git / GitHub</span></strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong><span>DSA</span></strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 d-flex justify-content-center ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong><span>Ubuntu</span></strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong><span>Metasploit</span></strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong><span>Burp Suite</span></strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong><span>Wireshark</span></strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 d-flex justify-content-center ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong><span>Nmap</span></strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong><span>HTML</span></strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong><span>JavaScript</span></strong>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 d-flex justify-content-center ftco-animate">
+          <div class="block-18">
+            <div class="text">
+              <strong><span>MS Office</span></strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5 pb-3">
+        <div class="col-md-7 heading-section text-center ftco-animate">
+          <h1 class="big big-2">Contact</h1>
+          <h2 class="mb-4">Contact Me</h2>
+          <p>
+            <strong>Feel free to contact me regarding opportunities or for
+              inquiries.</strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="row d-flex contact-info mb-5">
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-map-signs"></span>
+            </div>
+            <h3 class="mb-4">Address</h3>
+            <p>Lovely Professional university</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-phone2"></span>
+            </div>
+            <h3 class="mb-4">Contact Number</h3>
+            <p><a href="tel://1234567920"> +91-9999999999</a></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-paper-plane"></span>
+            </div>
+            <h3 class="mb-4">Email Address</h3>
+            <p>mukesh14bhatt@gmail.com</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          <div class="align-self-stretch box p-4 text-center">
+            <div class="icon d-flex align-items-center justify-content-center">
+              <span class="icon-globe"></span>
+            </div>
+            <h3 class="mb-4">Website</h3>
+            <p><a href="#">Not Available</a></p>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <footer class="ftco-footer ftco-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">About</h2>
+            <p>
+              My passion for cybersecurity stems from a desire to protect
+              individuals and organizations from the ever. With a strong
+              foundation in both technical and leadership skills.
+            </p>
+
+            <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-4">
+              <li class="ftco-animate">
+                <a href="https://github.com/MukeshBhatt09" target="github"><span class="icon-github"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a href="https://www.linkedin.com/in/mukesh-chandra-bhatt09/" target="linkedin"><span
+                    class="icon-linkedin"></span></a>
+              </li>
+              <li class="ftco-animate">
+                <a href="https://x.com/GrowLer_MB9" target="X"><span class="icon-twitter"></span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4 ml-md-4">
+            <h2 class="ftco-heading-2">Links</h2>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-long-arrow-right mr-2"></span>About</a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-long-arrow-right mr-2"></span>Skills</a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-long-arrow-right mr-2"></span>Socials</a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-long-arrow-right mr-2"></span>Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Skills</h2>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#"><span class="icon-long-arrow-right mr-2"></span>Bug Bounty</a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Application PenTesting</a>
+              </li>
+
+              <li>
+                <a href="#"><span class="icon-long-arrow-right mr-2"></span>OSINT & DFIR
+                </a>
+              </li>
+              <li>
+                <a href="#"><span class="icon-long-arrow-right mr-2"></span>CTFs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="ftco-footer-widget mb-4">
+            <h2 class="ftco-heading-2">Have Questions?</h2>
+            <div class="block-23 mb-3">
+              <ul>
+                <li>
+                  <span class="icon icon-map-marker"></span><span class="text">Lovely Professional University, India</span>
+                </li>
+                <li>
+                  <a href="#"><span class="icon icon-phone"></span><span class="text">+91 91337XXXXX</span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon icon-envelope"></span><span
+                      class="text">mukesh14bhatt@gmail.com</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            All rights reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#F96D00" />
+    </svg>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+
+  <script src="js/main.js"></script>
+</body>
+
 </html>
